@@ -12,7 +12,8 @@ The architecture of this project includes the following components:
 5. **DynamoDB**: A NoSQL database used to store ride request data.
 6. **IAM**: Roles and policies to manage permissions securely.
 
-![Architecture Diagram](path/to/your/architecture-diagram.png)
+![Wild Rydes Serverless Application Arch](https://github.com/user-attachments/assets/e4477bcc-2f40-4818-b626-ca3e7218c577)
+
 
 ### Detailed Architecture Components
 - **AWS Amplify**: Hosts the static files of the frontend application. It also handles continuous integration and deployment from a Git repository.
@@ -23,7 +24,8 @@ The architecture of this project includes the following components:
 - **AWS IAM**: Manages roles and policies to ensure least privilege access to AWS resources, enhancing security.
 
 ## Setup Instructions
-
+All the application codes are inside Master branch 
+Other src code and snapshots are inside main branch
 ### Prerequisites
 - AWS Account
 - AWS CLI configured with necessary permissions
