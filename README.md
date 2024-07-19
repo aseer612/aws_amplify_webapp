@@ -86,6 +86,34 @@ Navigate to the Lambda console.
   -Name the function and set the runtime to Node.js 16.x.
   -Change the execution role to the one created earlier.
 2. Deploy the Lambda function code:
-Replace the contents of index.js with the provided code in src section file name <index.js>
+  - Replace the contents of index.js with the provided code in src section file name <index.js>
+  - create a test case using code stored in src section file name <lambda-test>
 
-- create a test case using following code to check everything is setup correctly
+### Step 7: Set Up API Gateway
+1. Create a new REST API:
+Navigate to the API Gateway console.
+  - Click Create API > REST API > Build.
+  - Name the API and select Edge-optimized as the endpoint type.
+    
+2. Add a Cognito authorizer:
+Go to the Authorizers tab.
+  -Click Create New Authorizer.
+  -Name the authorizer and select the Cognito user pool.
+  -Set the token source to Authorization.3
+   
+4. Create a new resource and method:
+Go to the Resources tab.
+  -Click Create Resource and name it ride.
+  -Select the ride resource and click Create Method.
+  -Select POST and integrate with the Lambda function.
+  -Enable Lambda proxy integration.
+   
+6. Deploy the API:
+Go to the Deployments tab.
+  -Create a new deployment stage (e.g., dev).
+  -Copy the invoke URL and update src/js/config.js:
+
+wait for amplify to deploy changes and start ordering the unicorn
+
+
+
