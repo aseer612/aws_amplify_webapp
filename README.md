@@ -35,9 +35,9 @@ Create a repository where all the codes will be saved it could be GitHub or code
 for this project we will be using GitHub
 
 ### Step 2: Set Up the Frontend (using AWS amplify)
--Select GitHub as the repository source.
--Authenticate with GitHub and select the appropriate repository.
--Keep other settings as default and proceed to deploy application
+- Select GitHub as the repository source.
+- Authenticate with GitHub and select the appropriate repository.
+- Keep other settings as default and proceed to deploy application
 
 ### Step 3: Set Up Cognito
 1. Create a new Cognito user pool:
@@ -116,4 +116,6 @@ Go to the Deployments tab.
 wait for amplify to deploy changes and start ordering the unicorn
 
 
-
+Sources:
+- Source of application codes :  aws s3 cp s3://ttt-wildrydes/wildrydes-site ./ --recursive
+- lambda code sorce : https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/module-3/
